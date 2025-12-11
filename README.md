@@ -6,7 +6,7 @@ This project enables seamless cross-chain migration of Uniswap V3/V4 liquidity p
 
 ### The Problem
 
-Traditionally, migrating a Uniswap position across chains requires multiple manual steps:
+Migrating a Uniswap position across chains requires multiple manual steps:
 - Withdraw liquidity from the original position
 - Bridge each token separately to the destination chain
 - Manually recreate the position on the destination chain
@@ -218,22 +218,6 @@ Simultaneously, the Reactive Contract sends a second callback:
 
 ✅ **Parallel Processing**: Position creation and excess returns happen simultaneously
 
-## Use Cases
-
-- **Liquidity Farming**: Move positions to chains with better yields
-- **Gas Optimization**: Migrate to lower-cost chains
-- **Market Opportunities**: Follow liquidity to active markets
-- **Network Upgrades**: Move positions during chain migrations
-- **Risk Management**: Diversify positions across multiple chains
-
-## Technical Stack
-
-- **Smart Contract Language**: Solidity
-- **DEX Protocol**: Uniswap V3 and V4
-- **Automation Layer**: Reactive Network RSCs
-- **Origin Chains**: Arbitrum, Ethereum, Optimism, etc.
-- **Destination Chains**: Base, Polygon, Avalanche, etc.
-- **Bridge**: Cross-chain messaging protocol (configurable)
 
 ## Event Structure
 
@@ -274,15 +258,4 @@ event MigrationCompleted(
 );
 ```
 
-## Future Enhancements
 
-- Support for multi-hop bridges
-- Automated price range optimization
-- Batch migration for multiple positions
-- Integration with additional DEX protocols
-- Rebalancing strategies during migration
-- Fee tier selection optimization
-
----
-
-**Built with Reactive Network - Web3's first trustless cross-chain automation protocol**
